@@ -2,8 +2,8 @@ function [b,PSF,hn] = DAS(N,z0,f,phi,rn,source,SNR)
 % This code implements the Delay-and-Sum (DAS) algorithm
 %
 % More information about DAS can be found in the paper:
-%   L. de Santana, "Fundamentals of Acoustic Beamforming," 
-%   Design and Operation of Aeroacoustic Wind Tunnel Tests for Group and Air Transport, 2017.
+%    L. de Santana, "Fundamentals of Acoustic Beamforming," 
+%    Design and Operation of Aeroacoustic Wind Tunnel Tests for Group and Air Transport, 2017.
 %
 %
 % Inputs:
@@ -89,7 +89,7 @@ end
 q = zeros(N,N);
 CSM = zeros(M,M);
 
-for k = 1:size(source,2)
+for k = 1:size(source,1)
     q(source(k,2),source(k,1)) = 1;
     CSM = CSM + squeeze(gn(source(k,2),source(k,1),:))*squeeze(gn(source(k,2),source(k,1),:))';
 end
