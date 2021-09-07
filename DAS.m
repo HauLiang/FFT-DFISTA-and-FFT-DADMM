@@ -16,7 +16,7 @@ function [b,PSF,hn] = DAS(N,z0,f,phi,rn,source,SNR)
 % Outputs:
 %    b:  beamforming map, obtained by DAS, also termed the 'dirty map'
 %    PSF:  point spread function (PSF)
-%    ej:   steering vector
+%    hn:   steering vector
 %
 % Author: Hao Liang 
 % Last modified by: 21/09/03
